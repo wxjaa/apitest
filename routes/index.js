@@ -133,6 +133,49 @@ router.get('/components', function (req, res, next) {
                     "required"
                 ],
                 "idx": 3
+            },
+            {
+                "name": "明细2",
+                "defaultLable": "明细2",
+                "defaultAction": "增加明细2",
+                "components": [
+                    {
+                        "name": "日期区间",
+                        "defaultLable": "开始时间",
+                        "defaultLable2": "结束时间",
+                        "defaultProps": "请选择",
+                        "defaultProps2": "请选择",
+                        "defaultImportant": false,
+                        "defaultPrint": false,
+                        "defaultAutorekonTime": false,
+                        "defaultFormat": "YYYY-MM-DD",
+                        "defaultSubtitle": "时长",
+                        "componentName": "dddaterangefield",
+                        "supportSetting": [
+                            "label",
+                            "label2",
+                            "placeholder",
+                            "placeholder2",
+                            "dateformat",
+                            "required",
+                            "important",
+                            "autorekonTime",
+                            "subtitle",
+                            "print"
+                        ],
+                        "idx": 4
+                    }
+                ],
+                "selected": null,
+                "defaultPrint": false,
+                "InTableCanvas": null,
+                "componentName": "tablefield",
+                "supportSetting": [
+                    "label",
+                    "action",
+                    "required"
+                ],
+                "idx": 3
             }
         ]
 
