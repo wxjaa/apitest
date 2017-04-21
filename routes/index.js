@@ -121,6 +121,29 @@ router.get('/components', function (req, res, next) {
                             "print"
                         ],
                         "idx": 4
+                    },
+                    {
+                        "label": true,
+                        "placeholder": true,
+                        "required": true,
+                        "important": true,
+                        "print": true,
+                        "name": "单行输入框",
+                        "defaultLable": "单行输入框",
+                        "defaultProps": "请输入",
+                        "defaultImportant": true,
+                        "defaultPrint": false,
+                        "componentName": "textfield",
+                        "supportSetting": [
+                            "label",
+                            "placeholder",
+                            "required",
+                            "important",
+                            "print"
+                        ],
+                        "idx": 5,
+                        "InTableCanvas": null,
+                        "selected": null
                     }
                 ],
                 "selected": null,
@@ -179,6 +202,33 @@ router.get('/components', function (req, res, next) {
             }
         ]
 
+    }
+    res.send(json)
+    //res.render('index', {title: 'Express'});
+});
+router.get('/menus', function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+    res.header("Content-Type", "application/json;charset=utf-8");
+    var json = {
+        menus: [{
+
+            id: 11,
+            menuName: '我的考勤记录',
+            icon: '',
+            router: 'attendance',
+            component: "attendance"
+        },
+            {
+                id: 12,
+                menuName: '调休申请记录',
+                icon: '',
+                router: 'leave_record',
+                component: "leave_record"
+            }
+
+        ]
     }
     res.send(json)
     //res.render('index', {title: 'Express'});
